@@ -1,26 +1,19 @@
-# LC 744 - Find Smallest Letter Greater Than Target
+# Binary Search Revision
 
-## Topic
-Binary Search
+## LC 35 - Search Insert Position
 
-## Approach
+Pattern:
+- Lower Bound
 
-- Apply binary search
-- Search for first character greater than target
-- If no such character exists:
-  - Return first character (wrap around)
+Key Learning:
+- After binary search ends, low = insertion position.
 
-## Complexity
+---
 
-- Time: O(log n)
-- Space: O(1)
+## LC 744 - Find Smallest Letter Greater Than Target
 
-## Key Learning
+Pattern:
+- First Greater Element
 
-This is a classic "first greater element" binary search problem.
-
-The expression:
-
-low % letters.size()
-
-handles the wrap-around condition.
+Key Learning:
+- Use low % n for wrap around.
