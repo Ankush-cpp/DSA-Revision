@@ -61,3 +61,19 @@ When target is found:
   move right (low = mid + 1)
 
 This pattern is frequently used in interview questions involving duplicates.
+
+# LC 532 - K-diff Pairs in an Array
+
+## Approach
+- Sort array
+- Skip duplicates
+- Binary search for nums[i] + k
+
+## Complexity
+
+- Time: O(n log n)
+- Space: O(1) excluding sorting
+
+## Key Learning
+
+Binary Search can be used after sorting to efficiently find valid pairs.
