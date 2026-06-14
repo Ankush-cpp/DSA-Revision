@@ -1,79 +1,71 @@
 # Binary Search Revision
 
-## LC 35 - Search Insert Position
-Pattern:
-- Lower Bound
+## Solved Problems
 
-Key Learning:
-- low becomes insertion position.
-
----
-
-## LC 744 - Find Smallest Letter Greater Than Target
-Pattern:
-- First Greater Element
-
-Key Learning:
-- Wrap around using low % n.
+| LeetCode | Problem                                  | Pattern                      |
+| -------- | ---------------------------------------- | ---------------------------- |
+| 35       | Search Insert Position                   | Lower Bound                  |
+| 744      | Find Smallest Letter Greater Than Target | First Greater Element        |
+| 162      | Find Peak Element                        | Binary Search on Slope       |
+| 33       | Search in Rotated Sorted Array           | Rotated Binary Search        |
+| 34       | First and Last Position                  | First/Last Occurrence        |
+| 532      | K-diff Pairs in an Array                 | Binary Search + Duplicates   |
+| 540      | Single Element in Sorted Array           | Pair Structure Binary Search |
+| 153      | Find Minimum in Rotated Sorted Array     | Rotated Minimum              |
 
 ---
 
-## LC 162 - Find Peak Element
-Pattern:
-- Binary Search on slope
+## Patterns Covered
 
-Key Learning:
-- Binary Search can work without a fully sorted array.
+### Lower Bound
+
+* LC 35
+
+### First Greater Element
+
+* LC 744
+
+### First / Last Occurrence
+
+* LC 34
+
+### Peak Element
+
+* LC 162
+
+### Rotated Array Search
+
+* LC 33
+* LC 153
+
+### Pair Structure Search
+
+* LC 540
+
+### Binary Search on Sorted Data
+
+* LC 532
 
 ---
 
-## LC 33 - Search in Rotated Sorted Array
-Pattern:
-- Rotated Binary Search
+## Key Revision Notes
 
-Key Learning:
-- At least one half is always sorted.
+* Lower Bound ⇒ first element >= target
+* Upper Bound ⇒ first element > target
+* Rotated Array ⇒ one half is always sorted
+* Peak Element ⇒ use slope direction
+* Single Element ⇒ pairing pattern breaks after answer
 
-# LC 34 - Find First and Last Position of Element in Sorted Array
+---
 
-## Topic
-Binary Search
+## Revision Progress
 
-## Approach
+Total Solved: 8
+Topics Revised:
 
-- Use Binary Search twice:
-  1. Find first occurrence
-  2. Find last occurrence
-
-## Complexity
-
-- Time: O(log n)
-- Space: O(1)
-
-## Key Learning
-
-When target is found:
-
-- For first occurrence:
-  move left (high = mid - 1)
-
-- For last occurrence:
-  move right (low = mid + 1)
-
-This pattern is frequently used in interview questions involving duplicates.
-
-# LC 532 - K-diff Pairs in an Array
-
-## Approach
-- Sort array
-- Skip duplicates
-- Binary search for nums[i] + k
-
-## Complexity
-
-- Time: O(n log n)
-- Space: O(1) excluding sorting
-
-## Key Learning
-
-Binary Search can be used after sorting to efficiently find valid pairs.
+* Lower Bound
+* Upper Bound
+* Peak Element
+* Rotated Arrays
+* Pair Structure Search
+* Binary Search + Hashing
