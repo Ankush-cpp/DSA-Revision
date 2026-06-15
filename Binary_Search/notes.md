@@ -8,10 +8,11 @@
 | 744      | Find Smallest Letter Greater Than Target | First Greater Element        |
 | 162      | Find Peak Element                        | Binary Search on Slope       |
 | 33       | Search in Rotated Sorted Array           | Rotated Binary Search        |
-| 34       | First and Last Position                  | First/Last Occurrence        |
+| 34       | Find First and Last Position of Element  | First / Last Occurrence      |
 | 532      | K-diff Pairs in an Array                 | Binary Search + Duplicates   |
-| 540      | Single Element in Sorted Array           | Pair Structure Binary Search |
+| 540      | Single Element in a Sorted Array         | Pair Structure Binary Search |
 | 153      | Find Minimum in Rotated Sorted Array     | Rotated Minimum              |
+| 81       | Search in Rotated Sorted Array II        | Rotated Search + Duplicates  |
 
 ---
 
@@ -36,13 +37,17 @@
 ### Rotated Array Search
 
 * LC 33
+* LC 81
+
+### Rotated Array Minimum
+
 * LC 153
 
 ### Pair Structure Search
 
 * LC 540
 
-### Binary Search on Sorted Data
+### Binary Search + Duplicates
 
 * LC 532
 
@@ -53,6 +58,11 @@
 * Lower Bound ⇒ first element >= target
 * Upper Bound ⇒ first element > target
 * Rotated Array ⇒ one half is always sorted
+* Duplicates can hide the sorted half
+* When nums[low] == nums[mid] == nums[high]:
+
+  * low++
+  * high--
 * Peak Element ⇒ use slope direction
 * Single Element ⇒ pairing pattern breaks after answer
 
@@ -60,12 +70,16 @@
 
 ## Revision Progress
 
-Total Solved: 8
+Total Solved: 9
+
 Topics Revised:
 
 * Lower Bound
-* Upper Bound
+* First Greater Element
+* First / Last Occurrence
 * Peak Element
-* Rotated Arrays
+* Rotated Array Search
+* Rotated Array Search with Duplicates
+* Rotated Array Minimum
 * Pair Structure Search
-* Binary Search + Hashing
+* Binary Search with Duplicates
