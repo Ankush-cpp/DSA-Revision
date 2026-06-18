@@ -13,43 +13,39 @@
 | 540      | Single Element in a Sorted Array         | Pair Structure Binary Search |
 | 153      | Find Minimum in Rotated Sorted Array     | Rotated Minimum              |
 | 81       | Search in Rotated Sorted Array II        | Rotated Search + Duplicates  |
+| 875      | Koko Eating Bananas                      | Binary Search on Answer      |
 
 ---
 
 ## Patterns Covered
 
 ### Lower Bound
-
 * LC 35
 
 ### First Greater Element
-
 * LC 744
 
 ### First / Last Occurrence
-
 * LC 34
 
 ### Peak Element
-
 * LC 162
 
 ### Rotated Array Search
-
 * LC 33
 * LC 81
 
 ### Rotated Array Minimum
-
 * LC 153
 
 ### Pair Structure Search
-
 * LC 540
 
 ### Binary Search + Duplicates
-
 * LC 532
+
+### Binary Search on Answer
+- LC 875
 
 ---
 
@@ -65,12 +61,17 @@
   * high--
 * Peak Element ⇒ use slope direction
 * Single Element ⇒ pairing pattern breaks after answer
+* If answer is monotonic:
+  Binary Search on Answer can be applied.
+
+* Search space can be:
+  speed, capacity, time, distance, etc.
 
 ---
 
 ## Revision Progress
 
-Total Solved: 9
+Total Solved: 10
 
 Topics Revised:
 
@@ -83,3 +84,4 @@ Topics Revised:
 * Rotated Array Minimum
 * Pair Structure Search
 * Binary Search with Duplicates
+* Binary Search on Answer
