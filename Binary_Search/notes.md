@@ -14,6 +14,7 @@
 | 153      | Find Minimum in Rotated Sorted Array     | Rotated Minimum              |
 | 81       | Search in Rotated Sorted Array II        | Rotated Search + Duplicates  |
 | 875      | Koko Eating Bananas                      | Binary Search on Answer      |
+| 1011     | Capacity To Ship Packages Within D Days  | Binary Search on Answer      |
 
 ---
 
@@ -45,8 +46,8 @@
 * LC 532
 
 ### Binary Search on Answer
-- LC 875
-
+*LC 875
+* LC 1011
 ---
 
 ## Key Revision Notes
@@ -67,11 +68,17 @@
 * Search space can be:
   speed, capacity, time, distance, etc.
 
+- Binary Search on Answer works when:
+
+- If X works,
+  then every value greater than X also works.
+
+- This creates a monotonic search space.
 ---
 
 ## Revision Progress
 
-Total Solved: 10
+Total Solved: 11
 
 Topics Revised:
 
