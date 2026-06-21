@@ -15,7 +15,7 @@
 | 81       | Search in Rotated Sorted Array II        | Rotated Search + Duplicates  |
 | 875      | Koko Eating Bananas                      | Binary Search on Answer      |
 | 1011     | Capacity To Ship Packages Within D Days  | Binary Search on Answer      |
-
+| 1283 | Find the Smallest Divisor Given a Threshold | Binary Search on Answer |
 ---
 
 ## Patterns Covered
@@ -46,8 +46,9 @@
 * LC 532
 
 ### Binary Search on Answer
-*LC 875
+* LC 875
 * LC 1011
+* LC 1283
 ---
 
 ## Key Revision Notes
@@ -74,11 +75,18 @@
   then every value greater than X also works.
 
 - This creates a monotonic search space.
+Binary Search on Answer Checklist:
+
+1. Search space exists
+2. A validity function can be written
+3. Valid/Invalid region is monotonic
+4. Find minimum or maximum valid answer
+
 ---
 
 ## Revision Progress
 
-Total Solved: 11
+Total Solved: 12
 
 Topics Revised:
 
