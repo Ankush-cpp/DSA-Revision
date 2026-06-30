@@ -1,38 +1,49 @@
 # Second LeetCode Contest
 
-## Problems Solved
+## Problems
 
-| LC No. | Problem                                  | Difficulty | Pattern          |
-| ------ | ---------------------------------------- | ---------- | ---------------- |
-| 3974   | Maximum Total Sum of K Selected Elements | Medium     | Greedy + Sorting |
+| LC No. | Problem                                  | Status                  | Pattern          |
+| ------ | ---------------------------------------- | ----------------------- | ---------------- |
+| 3974   | Maximum Total Sum of K Selected Elements |   Solved During Contest | Greedy + Sorting |
+| 3975   | Filter Occupied Intervals                |   Upsolved              | Interval Merging |
 
-## Approach
+---
 
-* Sort the array in ascending order.
-* Select the largest `k` elements.
-* Process them from largest to smallest.
-* Multiply each selected element with the current multiplier.
-* If the multiplier becomes `0`, use `1` instead.
-* Accumulate the total sum.
+## Approaches
 
-## Complexity
+### LC 3974
 
-* Time: **O(n log n)**
-* Space: **O(1)** (excluding sorting)
+* Sort the array.
+* Pick the largest `k` elements.
+* Apply the multiplier greedily.
+
+### LC 3975
+
+* Sort all intervals.
+* Merge overlapping or adjacent intervals.
+* Remove the given free interval from each merged interval.
+* Return the remaining occupied intervals.
+
+---
 
 ## Learnings
 
-* Greedy strategy after sorting.
-* Careful handling of changing multiplier values.
-* First implementation solved during the second LeetCode contest.
+* Participated in the second contest.
+* Solved one problem during the contest.
+* Upsolved the next problem afterwards.
+* Practiced interval merging and interval manipulation.
+
+---
 
 ## Result
 
 * Contest: 2
-* Problems Solved: 1
-* Difficulty: Medium
+* Solved During Contest: 1
+* Upsolved: 1
+
+---
 
 ## Next Goal
 
-* Solve at least 2 problems in the next contest.
-* Improve implementation speed.
+* Solve at least 2 problems during the contest.
+* Continue upsolving unsolved problems after every contest.
