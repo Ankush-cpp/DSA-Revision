@@ -2,9 +2,10 @@
 
 ## Solved Problems
 
-| LeetCode | Problem         | Pattern          |
-| -------- | --------------- | ---------------- |
-| 56       | Merge Intervals | Interval Merging |
+| LeetCode | Problem         | Pattern                      |
+| -------- | --------------- | ---------------------------- |
+| 56       | Merge Intervals | Interval Merging             |
+| 57       | Insert Interval | Interval Insertion + Merging |
 
 ---
 
@@ -14,27 +15,36 @@
 
 * LC 56
 
+### Interval Insertion
+
+* LC 57
+
 ---
 
 ## Key Learning
 
-* Sort intervals by starting time.
-* If the current interval overlaps with the last merged interval:
+### LC 56
 
-  * Extend the end point.
-* Otherwise:
+* Sort intervals.
+* Merge overlapping intervals.
 
-  * Start a new merged interval.
+### LC 57
+
+* Add non-overlapping intervals before the new interval.
+* Merge all overlapping intervals.
+* Add remaining intervals.
 
 ---
 
 ## Complexity
 
-* Time: **O(n log n)** (sorting)
-* Space: **O(n)**
+| Problem | Time       | Space |
+| ------- | ---------- | ----- |
+| LC 56   | O(n log n) | O(n)  |
+| LC 57   | O(n)       | O(n)  |
 
 ---
 
 ## Revision Progress
 
-Total Solved: 1
+Total Solved: 2
