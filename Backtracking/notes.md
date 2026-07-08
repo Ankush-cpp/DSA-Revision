@@ -2,17 +2,19 @@
 
 ## Solved Problems
 
-| LeetCode | Problem         | Pattern                  |
-| -------- | --------------- | ------------------------ |
-| 39       | Combination Sum | Recursion + Backtracking |
+| LeetCode | Problem         | Pattern                        |
+| -------- | --------------- | ------------------------------ |
+| 39       | Combination Sum | Take / Not Take + Backtracking |
+| 78       | Subsets         | Take / Not Take                |
 
 ---
 
 ## Patterns Covered
 
-### Take / Not Take Recursion
+### Take / Not Take
 
 * LC 39
+* LC 78
 
 ### Backtracking
 
@@ -24,20 +26,30 @@
 
 ## Key Learning
 
-* The same element can be chosen multiple times.
-* "Take" keeps the same index.
-* "Skip" moves to the next index.
-* Always backtrack by removing the last chosen element.
+### LC 39
+
+* Same element can be chosen multiple times.
+* Stay on the same index after taking an element.
+
+### LC 78
+
+* Every element has two choices:
+
+  * Include
+  * Exclude
+* Generate all possible subsets.
 
 ---
 
 ## Complexity
 
-* Time: Exponential (depends on the number of valid combinations)
-* Space: O(target) recursion depth (excluding output)
+| Problem | Time        | Space                     |
+| ------- | ----------- | ------------------------- |
+| LC 39   | Exponential | O(target) recursion depth |
+| LC 78   | O(2ⁿ × n)   | O(n) recursion depth      |
 
 ---
 
 ## Revision Progress
 
-Total Solved: 1
+Total Solved: 2
