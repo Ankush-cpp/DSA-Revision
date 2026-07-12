@@ -2,11 +2,13 @@
 
 ## Solved Problems
 
-| LeetCode | Problem         | Pattern                        |
-| -------- | --------------- | ------------------------------ |
-| 39       | Combination Sum | Take / Not Take + Backtracking |
-| 46       | Permutations    | Backtracking + Visited Array   |
-| 78       | Subsets         | Take / Not Take                |
+| LeetCode | Problem         | Pattern                            |
+| -------- | --------------- | ---------------------------------- |
+| 39       | Combination Sum | Take / Not Take + Backtracking     |
+| 46       | Permutations    | Backtracking + Visited Array       |
+| 78       | Subsets         | Take / Not Take                    |
+| 36       | Valid Sudoku    | Hashing / Matrix Validation        |
+| 37       | Sudoku Solver   | Backtracking + Constraint Checking |
 
 ---
 
@@ -21,46 +23,48 @@
 
 * LC 46
 
-### Backtracking
+### Constraint Validation
 
-* Choose
-* Explore
-* Undo (Backtrack)
+* LC 36
+
+### Grid Backtracking
+
+* LC 37
 
 ---
 
 ## Key Learning
 
-### LC 39
+### LC 36
+- Temporarily remove the current digit.
+- Reuse the `isSafe()` function to validate:
+  - Row
+  - Column
+  - 3×3 subgrid
+- Restore the digit after validation.
 
-* Same element can be chosen multiple times.
-* Stay on the same index after taking an element.
+### LC 37
 
-### LC 46
-
-* Every element can be used only once.
-* Track used elements with a visited array.
-* Backtrack after each recursive call.
-
-### LC 78
-
-* Every element has two choices:
-
-  * Include
-  * Exclude
+* Find an empty cell.
+* Try digits from 1 to 9.
+* Place a valid digit.
+* Recurse.
+* Backtrack if needed.
 
 ---
 
 ## Complexity
 
-| Problem | Time        | Space                     |
-| ------- | ----------- | ------------------------- |
-| LC 39   | Exponential | O(target) recursion depth |
-| LC 46   | O(n × n!)   | O(n) recursion depth      |
-| LC 78   | O(2ⁿ × n)   | O(n) recursion depth      |
+| Problem | Time                     | Space                 |
+| ------- | ------------------------ | --------------------- |
+| LC 39   | Exponential              | O(target)             |
+| LC 46   | O(n × n!)                | O(n)                  |
+| LC 78   | O(2ⁿ × n)                | O(n)                  |
+| LC 36   | O(1) (fixed 9×9 board)   | O(1)                  |
+| LC 37   | Exponential (worst case) | O(81) recursion depth |
 
 ---
 
 ## Revision Progress
 
-Total Solved: 3
+Total Solved: 5
