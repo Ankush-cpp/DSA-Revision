@@ -8,6 +8,7 @@
 | 40       | Combination Sum II      | Duplicate Handling             |
 | 46       | Permutations            | Visited Array                  |
 | 78       | Subsets                 | Take / Not Take                |
+| 79       | Word Search             | Grid DFS + Backtracking        |
 | 131      | Palindrome Partitioning | Partition Backtracking         |
 | 36       | Valid Sudoku            | Constraint Validation          |
 | 37       | Sudoku Solver           | Grid Backtracking              |
@@ -28,6 +29,10 @@
 ### Permutations
 
 * LC 46
+
+### Grid DFS + Backtracking
+
+* LC 79
 
 ### Partition Backtracking
 
@@ -51,21 +56,25 @@
 
 ### LC 40
 
-* Sort the array.
-* Skip duplicates at the same recursion level.
+* Sort the array and skip duplicates.
 
 ### LC 46
 
-* Use a visited array.
+* Track used elements with a visited array.
 
 ### LC 78
 
-* Include / Exclude every element.
+* Include or exclude each element.
+
+### LC 79
+
+* Explore four directions.
+* Mark the current cell as visited.
+* Restore the cell after recursion (backtrack).
 
 ### LC 131
 
-* Try every possible partition.
-* Continue recursion only if the current substring is a palindrome.
+* Partition only on palindrome substrings.
 
 ### LC 36
 
@@ -73,26 +82,25 @@
 
 ### LC 37
 
-* Place a valid digit.
-* Recurse.
-* Backtrack on failure.
+* Try every valid digit and backtrack on failure.
 
 ---
 
 ## Complexity
 
-| Problem | Time                   | Space                 |
-| ------- | ---------------------- | --------------------- |
-| LC 39   | Exponential            | O(target)             |
-| LC 40   | Exponential            | O(n)                  |
-| LC 46   | O(n × n!)              | O(n)                  |
-| LC 78   | O(2ⁿ × n)              | O(n)                  |
-| LC 131  | O(n × 2ⁿ) (worst case) | O(n) recursion depth  |
-| LC 36   | O(1)                   | O(1)                  |
-| LC 37   | Exponential            | O(81) recursion depth |
+| Problem | Time          | Space     |
+| ------- | ------------- | --------- |
+| LC 39   | Exponential   | O(target) |
+| LC 40   | Exponential   | O(n)      |
+| LC 46   | O(n × n!)     | O(n)      |
+| LC 78   | O(2ⁿ × n)     | O(n)      |
+| LC 79   | O(m × n × 4ᴸ) | O(L)      |
+| LC 131  | O(n × 2ⁿ)     | O(n)      |
+| LC 36   | O(1)          | O(1)      |
+| LC 37   | Exponential   | O(81)     |
 
 ---
 
 ## Revision Progress
 
-Total Solved: 7
+Total Solved: 8
