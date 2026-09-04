@@ -1,0 +1,27 @@
+#include <vector>
+#include <string>
+using namespace std;
+
+class Solution {
+public:
+    char slowestKey(vector<int>& releaseTimes, string keysPressed) {
+        int duration = 0;
+        int maxDuration = releaseTimes[0];
+        char answer = keysPressed[0];
+
+        for (int i = 1; i < keysPressed.size(); i++) {
+            duration = releaseTimes[i] - releaseTimes[i - 1];
+
+            if (maxDuration < duration) {
+                maxDuration = duration;
+                answer = keysPressed[i];
+            }
+
+            if (maxDuration == duration && keysPressed[i] > answer) {
+                answer = keysPressed[i];
+            }
+        }
+
+        return answer;
+    }
+};
