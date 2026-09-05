@@ -20,8 +20,6 @@ public:
             if (maxDuration == duration && keysPressed[i] > answer) {
                 answer = keysPressed[i];
             }
-        }
-
-        return answer;
+        } return answer;
     }
 };
