@@ -10,6 +10,7 @@ A collection of classic **Arrays & Strings** problems solved during my DSA revis
 |:--------:|---------|---------|
 | 1629 | Slowest Key | Array Traversal + Character Comparison |
 | 2644 | Find the Maximum Divisibility Score | Array Traversal + Divisibility |
+| 2708 | Maximum Strength of a Group | Greedy + Sorting |
 
 ---
 
@@ -33,6 +34,14 @@ A collection of classic **Arrays & Strings** problems solved during my DSA revis
 - Check divisibility using the modulo operator.
 - Track the divisor with the maximum score.
 - Handle ties by choosing the smallest divisor.
+
+## Greedy + Sorting
+- LC 2708 – Maximum Strength of a Group
+
+**Learning**
+- Arrange numbers strategically to maximize the product.
+- Handle positive, negative and zero values carefully.
+- Use sorting to make the selection decisions easier.
 
 ---
 
