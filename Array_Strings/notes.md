@@ -11,6 +11,7 @@ A collection of classic **Arrays & Strings** problems solved during my DSA revis
 | 1629 | Slowest Key | Array Traversal + Character Comparison |
 | 2644 | Find the Maximum Divisibility Score | Array Traversal + Divisibility |
 | 2708 | Maximum Strength of a Group | Greedy + Sorting |
+| 2231 | Largest Number After Digit Swaps by Parity | Sorting + Parity |
 
 ---
 
@@ -43,6 +44,15 @@ A collection of classic **Arrays & Strings** problems solved during my DSA revis
 - Handle positive, negative and zero values carefully.
 - Use sorting to make the selection decisions easier.
 
+## Sorting + Parity
+- LC 2231 – Largest Number After Digit Swaps by Parity
+
+**Learning**
+- Separate elements according to parity.
+- Sort each parity group in descending order.
+- Replace digits while preserving their original parity.
+- Greedily place the largest available valid digit at each position.
+
 ---
 
 # Complexity Summary
@@ -51,6 +61,7 @@ A collection of classic **Arrays & Strings** problems solved during my DSA revis
 |---------|-----------------|------------------|
 | LC 1629 | O(n) | O(1) |
 | LC 2644 | O(n × m) | O(1) |
+| LC 2231 | O(d log d) | O(d) |
 
 Where:
 - `n` = number of elements in the input array
