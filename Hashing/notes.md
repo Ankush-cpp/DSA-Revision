@@ -4,6 +4,7 @@
 |:--------:|---------|---------|
 | 532 | K-diff Pairs in an Array | Hashing + Frequency |
 | 3804 | Number of Centered Subarrays | Subarray Enumeration + Hash Set |
+| 2856 | Minimum Array Length After Pair Removals | Hash Map + Frequency |
 
 ---
 
@@ -28,6 +29,15 @@
 - Use a hash set to track elements present in the current subarray.
 - Check whether the current sum exists in the subarray.
 
+## Hash Map + Frequency
+- LC 2856 – Minimum Array Length After Pair Removals
+
+**Learning**
+- Count frequencies using an `unordered_map`.
+- Find the element with the maximum frequency.
+- Compare its frequency with the number of remaining elements.
+- Determine how many elements can be removed in pairs.
+- Use frequency information instead of simulating every removal.
 ---
 
 # Complexity Summary
@@ -36,6 +46,7 @@
 |---------|-----------------|------------------|
 | LC 532 | O(n) | O(n) |
 | LC 3804 | O(n²) | O(n) |
+| LC 2856 | O(n) | O(n) |
 
 ---
 

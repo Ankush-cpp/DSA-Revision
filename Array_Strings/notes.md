@@ -12,6 +12,7 @@ A collection of classic **Arrays & Strings** problems solved during my DSA revis
 | 2644 | Find the Maximum Divisibility Score | Array Traversal + Divisibility |
 | 2708 | Maximum Strength of a Group | Greedy + Sorting |
 | 2231 | Largest Number After Digit Swaps by Parity | Sorting + Parity |
+| 2529 | Maximum Count of Positive Integer and Negative Integer | Counting |
 
 ---
 
@@ -53,6 +54,13 @@ A collection of classic **Arrays & Strings** problems solved during my DSA revis
 - Replace digits while preserving their original parity.
 - Greedily place the largest available valid digit at each position.
 
+## Counting
+- LC 2529 – Maximum Count of Positive Integer and Negative Integer
+
+**Learning**
+- Traverse the array once and maintain separate counts.
+- Ignore zero because it is neither positive nor negative.
+- Return the larger count.
 ---
 
 # Complexity Summary
@@ -62,6 +70,7 @@ A collection of classic **Arrays & Strings** problems solved during my DSA revis
 | LC 1629 | O(n) | O(1) |
 | LC 2644 | O(n × m) | O(1) |
 | LC 2231 | O(d log d) | O(d) |
+| LC 2529 | O(n) | O(1) |
 
 Where:
 - `n` = number of elements in the input array
