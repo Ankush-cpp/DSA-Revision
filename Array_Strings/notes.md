@@ -6,13 +6,14 @@ A collection of classic **Arrays & Strings** problems solved during my DSA revis
 
 ## Problems Solved
 
-| LeetCode | Problem | Pattern |
-|:--------:|---------|---------|
-| 1629 | Slowest Key | Array Traversal + Character Comparison |
-| 2644 | Find the Maximum Divisibility Score | Array Traversal + Divisibility |
-| 2708 | Maximum Strength of a Group | Greedy + Sorting |
-| 2231 | Largest Number After Digit Swaps by Parity | Sorting + Parity |
-| 2529 | Maximum Count of Positive Integer and Negative Integer | Counting |
+| LeetCode | Problem                             | Pattern                        |
+|:--------:|-------------------------------------|--------------------------------|
+| 1629     | Slowest Key | Array Traversal + Character Comparison                 |
+| 2644     | Find the Maximum Divisibility Score | Array Traversal + Divisibility |
+| 2708     | Maximum Strength of a Group         | Greedy + Sorting               |
+| 2231     | Largest Number After Digit Swaps by Parity | Sorting + Parity        |
+| 2529     | Maximum Count of Positive Integer and Negative Integer | Counting    |
+| 2865     | Beautiful Towers I                  | Peak Enumeration + Greedy      |
 
 ---
 
@@ -61,16 +62,28 @@ A collection of classic **Arrays & Strings** problems solved during my DSA revis
 - Traverse the array once and maintain separate counts.
 - Ignore zero because it is neither positive nor negative.
 - Return the larger count.
+
+## Peak Enumeration
+- LC 2865 – Beautiful Towers I
+
+**Learning**
+- Consider each element as the peak of the mountain.
+- Traverse towards the left and right while maintaining the non-increasing height condition away from the peak.
+- For every chosen peak, calculate the maximum possible sum of tower heights.
+- Keep track of the maximum sum obtained across all possible peaks.
+- Reuse the chosen peak's height as the upper limit while determining heights on both sides.
+
 ---
 
 # Complexity Summary
 
 | Problem | Time Complexity | Space Complexity |
 |---------|-----------------|------------------|
-| LC 1629 | O(n) | O(1) |
-| LC 2644 | O(n × m) | O(1) |
-| LC 2231 | O(d log d) | O(d) |
-| LC 2529 | O(n) | O(1) |
+| LC 1629 | O(n)            | O(1)             |
+| LC 2644 | O(n × m)        | O(1)             |
+| LC 2231 | O(d log d)      | O(d)             |
+| LC 2529 | O(n)            | O(1)             |
+| LC 2865 | O(n²)           | O(1)             |
 
 Where:
 - `n` = number of elements in the input array
