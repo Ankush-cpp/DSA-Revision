@@ -6,18 +6,19 @@ A collection of classic **Backtracking** problems solved during my DSA revision.
 
 ## Problems Solved
 
-| LeetCode | Problem | Pattern |
-|:--------:|---------|---------|
-| 22 | Generate Parentheses | Constraint Backtracking |
-| 36 | Valid Sudoku | Constraint Validation |
-| 37 | Sudoku Solver | Grid Backtracking |
-| 39 | Combination Sum | Take / Not Take |
-| 40 | Combination Sum II | Duplicate Handling |
-| 46 | Permutations | Visited Array |
-| 78 | Subsets | Take / Not Take |
-| 79 | Word Search | Grid DFS + Backtracking |
-| 93 | Restore IP Addresses | Partition + Validation |
-| 131 | Palindrome Partitioning | Partition Backtracking |
+| LeetCode | Problem                        | Pattern                     |
+|:--------:|--------------------------------|-----------------------------|
+| 22       | Generate Parentheses           | Constraint Backtracking     |
+| 36       | Valid Sudoku                   | Constraint Validation       |
+| 37       | Sudoku Solver                  | Grid Backtracking           |
+| 39       | Combination Sum                | Take / Not Take             |
+| 40       | Combination Sum II             | Duplicate Handling          |
+| 46       | Permutations                   | Visited Array               |
+| 78       | Subsets                        | Take / Not Take             |
+| 79       | Word Search                    | Grid DFS + Backtracking     |
+| 93       | Restore IP Addresses           | Partition + Validation      |
+| 131      | Palindrome Partitioning        | Partition Backtracking      |
+| 1947     | Maximum Compatibility Score Sum| Backtracking + Permutations |
 
 ---
 
@@ -111,22 +112,33 @@ A collection of classic **Backtracking** problems solved during my DSA revision.
 - Recurse.
 - Backtrack on failure.
 
+## 10. Backtracking + Permutations
+- LC 1947 – Maximum Compatibility Score Sum
+
+**Learning**
+- Assign students to mentors one by one using recursion.
+- Calculate compatibility by counting matching answers.
+- Use a `visited` array to ensure each mentor is assigned only once.
+- Explore all possible student–mentor assignments.
+- Backtrack by unmarking the mentor after the recursive call.
+- Maintain the maximum total compatibility score across all assignments.
 ---
 
 # Complexity Summary
 
 | Problem | Time Complexity | Space Complexity |
 |---------|-----------------|------------------|
-| LC 22 | O(4ⁿ / √n) | O(n) |
-| LC 36 | O(1) | O(1) |
-| LC 37 | Exponential | O(81) recursion stack |
-| LC 39 | Exponential | O(target) |
-| LC 40 | Exponential | O(n) |
-| LC 46 | O(n × n!) | O(n) |
-| LC 78 | O(2ⁿ × n) | O(n) |
-| LC 79 | O(m × n × 4ᴸ) | O(L) |
-| LC 93 | O(3⁴) ≈ O(1) | O(4) |
-| LC 131 | O(n × 2ⁿ) | O(n) |
+| LC 22   | O(4ⁿ / √n)      | O(n)             |
+| LC 36   | O(1) | O(1)     |                  |
+| LC 37   | Exponential     | O(81)            |
+| LC 39   | Exponential     | O(target)        |
+| LC 40   | Exponential     | O(n)             |
+| LC 46   | O(n × n!)       | O(n)             |
+| LC 78   | O(2ⁿ × n)       | O(n)             |
+| LC 79   | O(m × n × 4ᴸ)   | O(L)             |
+| LC 93   | O(3⁴) ≈ O(1)    | O(4)             |
+| LC 131  | O(n × 2ⁿ)       | O(n)             |
+| LC 1947 |O(n!.n.m)        | O(n)             |
 
 ---
 
