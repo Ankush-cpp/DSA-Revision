@@ -14,6 +14,7 @@ A collection of classic **Arrays & Strings** problems solved during my DSA revis
 | 2231     | Largest Number After Digit Swaps by Parity | Sorting + Parity        |
 | 2529     | Maximum Count of Positive Integer and Negative Integer | Counting    |
 | 2865     | Beautiful Towers I                  | Peak Enumeration + Greedy      |
+| 1961 | Check If String Is a Prefix of Array | String Concatenation |
 
 ---
 
@@ -73,6 +74,18 @@ A collection of classic **Arrays & Strings** problems solved during my DSA revis
 - Keep track of the maximum sum obtained across all possible peaks.
 - Reuse the chosen peak's height as the upper limit while determining heights on both sides.
 
+## String Concatenation
+
+* LC 1961 – Check If String Is a Prefix of Array
+
+**Learning**
+
+* Build a temporary string by concatenating array elements sequentially.
+* Compare the temporary string with the target string after every concatenation.
+* Return `true` when both strings become equal.
+* If the temporary string becomes longer than the target string, return `false`.
+* Return `false` if all array elements are processed without finding a match.
+
 ---
 
 # Complexity Summary
@@ -84,6 +97,7 @@ A collection of classic **Arrays & Strings** problems solved during my DSA revis
 | LC 2231 | O(d log d)      | O(d)             |
 | LC 2529 | O(n)            | O(1)             |
 | LC 2865 | O(n²)           | O(1)             |
+| LC 1961 | O(n+L)          | O(L)             |
 
 Where:
 - `n` = number of elements in the input array
