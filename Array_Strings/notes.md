@@ -15,6 +15,7 @@ A collection of classic **Arrays & Strings** problems solved during my DSA revis
 | 2529     | Maximum Count of Positive Integer and Negative Integer | Counting    |
 | 2865     | Beautiful Towers I                  | Peak Enumeration + Greedy      |
 | 1961 | Check If String Is a Prefix of Array | String Concatenation |
+| 581 | Shortest Unsorted Continuous Subarray | Two Pointers + Min-Max Traversal |
 
 ---
 
@@ -86,6 +87,20 @@ A collection of classic **Arrays & Strings** problems solved during my DSA revis
 * If the temporary string becomes longer than the target string, return `false`.
 * Return `false` if all array elements are processed without finding a match.
 
+## Two Pointers + Min-Max Traversal
+
+* LC 581 – Shortest Unsorted Continuous Subarray
+
+**Learning**
+
+* Traverse from left to right while maintaining the maximum element seen so far.
+* If the current element is smaller than the maximum seen, update the right boundary.
+* Traverse from right to left while maintaining the minimum element seen so far.
+* If the current element is greater than the minimum seen, update the left boundary.
+* The boundaries identify the smallest subarray that needs sorting.
+* If no boundaries are found, the array is already sorted.
+* Calculate the required length using the two boundaries.
+
 ---
 
 # Complexity Summary
@@ -98,6 +113,7 @@ A collection of classic **Arrays & Strings** problems solved during my DSA revis
 | LC 2529 | O(n)            | O(1)             |
 | LC 2865 | O(n²)           | O(1)             |
 | LC 1961 | O(n+L)          | O(L)             |
+| LC 581  | O(n)            | O(1)             |
 
 Where:
 - `n` = number of elements in the input array
